@@ -1,0 +1,226 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+}
+
+.main {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 12px;
+    border-bottom-right-radius: 120px;
+    position: relative;
+}
+
+.sec-1 {
+    height: 150px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.sec-2 {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    font-weight:bolder;
+    margin-left: 17px;
+}
+
+.sec-2 span {
+    color: hsl(261, 45%, 44%);
+}
+
+.button {
+    width: 55px;
+    height: 55px;
+    border-radius: 55px;
+    background-color: black;
+    position: absolute;
+    right: 40px;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+}
+
+.button::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: inherit;
+    border-radius: 20px;
+    border: 2px solid ;
+    border-color: white transparent transparent transparent; 
+    top: 25px;
+    left: 7px;
+    transform: rotatey(-20deg);
+}
+
+.button::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: inherit;
+    border-radius: 20px;
+    border: 2px solid ;
+    border-color: white transparent transparent transparent; 
+    top: 25px;
+    left: 25px;
+    transform: rotatey(-20deg);
+}
+
+.sec-1::after {
+    content: "";
+    width: 115%;
+    height: 1px;
+    background-color: #ececec;
+    position: absolute;
+    bottom: 20px;
+    left: 17px;
+}
+
+.sec-1 div {
+    font-size: smaller;
+    color: grey;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 35px;
+    width: 100px;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    border: 1px solid hsl(261, 45%, 44%);
+}
+
+
+@media (min-width:0px) {
+    .main {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-top: 10px;
+        padding: 30px;
+        border-radius: 12px;
+        border-bottom-right-radius: 120px;
+        position: relative;
+    }
+
+    .sec-1::after {
+        margin-left: -30px;
+    }
+
+    .sec-2 {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    input {
+        width: 60px;
+        height: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width:662px) {
+    .main {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-top: 10px;
+        padding: 30px;
+        border-radius: 12px;
+        border-bottom-right-radius: 120px;
+        position: relative;
+    }
+    .sec-2 {
+        font-size: 50px;
+    }
+
+    input {
+        width: 60px;
+    }
+
+    .sec-1::after {
+        width: 90%;
+        margin-bottom: -20px;
+        width: 230px;
+        margin-left: -5px;
+        margin-bottom: -10px;
+    }
+}
+
+@media (min-width:992px) {
+    .main {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-top: 10px;
+        padding: 30px;
+        border-radius: 12px;
+        border-bottom-right-radius: 120px;
+        position: relative;
+    }
+    .sec-2 {
+        font-size: 50px;
+    }
+    .sec-1::after {
+        bottom: 25px;
+        width: 260px;
+        margin-left: -10px;
+    }
+}
+
+@media (min-width:1200px) {
+    .main {
+        width: 500px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        margin-top: 10px;
+        padding: 30px;
+        border-radius: 12px;
+        border-bottom-right-radius: 120px;
+        position: relative;
+    }
+
+    .sec-2 {
+        font-size: 70px;
+    }
+
+    input {
+        width: 100px;
+    }
+
+    .sec-1::after {
+        bottom: 25px;
+        width: 420px;
+        margin-left: 0px;
+    }
+}
